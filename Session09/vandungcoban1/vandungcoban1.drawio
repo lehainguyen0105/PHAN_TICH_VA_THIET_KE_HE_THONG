@@ -1,0 +1,67 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Trang-1" id="_YaQdH_KyHiwCqmzcX6Q">
+    <mxGraphModel dx="960" dy="561" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="jrDAM6wNu57ywoghVBQP-19" edge="1" parent="1" source="jrDAM6wNu57ywoghVBQP-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=8 8;endArrow=none;endFill=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="255" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jrDAM6wNu57ywoghVBQP-4" parent="1" style="html=1;whiteSpace=wrap;" value="WarehouseUI" vertex="1">
+          <mxGeometry height="50" width="110" x="200" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="jrDAM6wNu57ywoghVBQP-20" edge="1" parent="1" source="jrDAM6wNu57ywoghVBQP-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=8 8;endArrow=none;endFill=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="455" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jrDAM6wNu57ywoghVBQP-5" parent="1" style="html=1;whiteSpace=wrap;" value="InventoryManager" vertex="1">
+          <mxGeometry height="50" width="110" x="400" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="jrDAM6wNu57ywoghVBQP-14" edge="1" parent="1" source="jrDAM6wNu57ywoghVBQP-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=8 8;endArrow=none;endFill=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="105" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jrDAM6wNu57ywoghVBQP-13" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="nhân viên kho" vertex="1">
+          <mxGeometry height="60" width="30" x="90" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="jrDAM6wNu57ywoghVBQP-15" parent="1" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
+          <mxGeometry height="180" width="10" x="250" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="jrDAM6wNu57ywoghVBQP-16" edge="1" parent="1" style="html=1;verticalAlign=bottom;startArrow=none;endArrow=block;startSize=8;curved=0;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=5;startFill=0;" target="jrDAM6wNu57ywoghVBQP-15" value="&lt;span style=&quot;color: rgb(237, 237, 237); font-size: 13px; background-color: rgb(27, 29, 30);&quot;&gt;Quét mã kiện hàng&lt;/span&gt;&lt;br style=&quot;color: rgb(237, 237, 237); font-size: 13px; background-color: rgb(27, 29, 30);&quot;&gt;&lt;span style=&quot;color: rgb(237, 237, 237); font-size: 13px; background-color: rgb(27, 29, 30);&quot;&gt;[Sync Message]&lt;/span&gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="110" y="155" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jrDAM6wNu57ywoghVBQP-21" parent="1" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
+          <mxGeometry height="130" width="10" x="450" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="jrDAM6wNu57ywoghVBQP-22" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=5;" target="jrDAM6wNu57ywoghVBQP-21" value="&lt;span style=&quot;color: rgb(237, 237, 237); font-size: 13px; background-color: rgb(27, 29, 30);&quot;&gt;export_package()&lt;/span&gt;&lt;br style=&quot;color: rgb(237, 237, 237); font-size: 13px; background-color: rgb(27, 29, 30);&quot;&gt;&lt;span style=&quot;color: rgb(237, 237, 237); font-size: 13px; background-color: rgb(27, 29, 30);&quot;&gt;[Sync Message]&lt;/span&gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="260" y="195" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jrDAM6wNu57ywoghVBQP-23" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" target="jrDAM6wNu57ywoghVBQP-15" value="&lt;span style=&quot;color: rgb(237, 237, 237); font-size: 13px; background-color: rgb(27, 29, 30);&quot;&gt;Kết quả xuất kho&lt;/span&gt;&lt;br style=&quot;color: rgb(237, 237, 237); font-size: 13px; background-color: rgb(27, 29, 30);&quot;&gt;&lt;span style=&quot;color: rgb(237, 237, 237); font-size: 13px; background-color: rgb(27, 29, 30);&quot;&gt;[Return Message]&lt;/span&gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="450" y="320" as="sourcePoint" />
+            <mxPoint x="260" y="265" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jrDAM6wNu57ywoghVBQP-25" parent="1" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
+          <mxGeometry height="130" width="10" x="450" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="jrDAM6wNu57ywoghVBQP-26" edge="1" parent="1" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" target="jrDAM6wNu57ywoghVBQP-25" value="&lt;span style=&quot;color: rgb(237, 237, 237); font-size: 13px; background-color: rgb(27, 29, 30);&quot;&gt;Kiểm tra hạn lưu kho&lt;/span&gt;&lt;br style=&quot;color: rgb(237, 237, 237); font-size: 13px; background-color: rgb(27, 29, 30);&quot;&gt;&lt;span style=&quot;color: rgb(237, 237, 237); font-size: 13px; background-color: rgb(27, 29, 30);&quot;&gt;[Self Message]&lt;/span&gt;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="480" y="250" />
+            </Array>
+            <mxPoint x="460" y="220" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
