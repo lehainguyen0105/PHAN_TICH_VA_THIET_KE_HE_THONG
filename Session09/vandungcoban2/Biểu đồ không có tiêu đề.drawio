@@ -1,0 +1,144 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Trang-1" id="Fk9A4fgnRsgRN3_5NCT6">
+    <mxGraphModel dx="961" dy="561" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <UserObject label="" plantUmlData="{&#xa;  &quot;data&quot;: &quot;@startuml\nskinparam style strictuml\nskinparam sequenceMessageAlign center\n\nactor \&quot;Khách nhận hàng\&quot; as Customer\nparticipant \&quot;LockerTerminal\&quot; as Terminal\nparticipant \&quot;PackageService\&quot; as Service\n\nCustomer -&gt; Terminal: Nhập mã OTP\nactivate Terminal\n\nTerminal -&gt; Service: verify_otp()\nactivate Service\n\nalt [OTP đúng]\n    Service --&gt; Terminal: Kết quả hợp lệ\n    Terminal --&gt; Customer: \&quot;Mở tủ thành công\&quot;\nelse [OTP sai]\n    Service --&gt; Terminal: Kết quả không hợp lệ\n    deactivate Service\n    Terminal --&gt; Customer: \&quot;Mã OTP không đúng, vui lòng thử lại\&quot;\nend\n\ndeactivate Terminal\n@enduml&quot;,&#xa;  &quot;config&quot;: null&#xa;}" id="nG7lfMtl_-IqsgEl2b1K-91">
+          <mxCell connectable="0" parent="1" style="group;transparentBounds=1;editIcon=1;lockedGroup=0;groupPadding=10;" vertex="1">
+            <mxGeometry as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="pl_2" plantUmlBaseStyle="shape=umlLifeline;perimeter=lifelinePerimeter;participant=none;size=57;lifelineMirror=1;dashPattern=5 5;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;fillColor=none;strokeColor=#181818;strokeWidth=0.5;" plantUmlBaseValue="" id="nG7lfMtl_-IqsgEl2b1K-92">
+          <mxCell parent="nG7lfMtl_-IqsgEl2b1K-91" style="shape=umlLifeline;perimeter=lifelinePerimeter;participant=none;size=57;lifelineMirror=1;dashPattern=5 5;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;fillColor=none;strokeColor=#181818;strokeWidth=0.5;" vertex="1">
+            <mxGeometry height="376.8" width="118.41890000000002" x="53.99999999999999" y="260" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Khách nhận hàng" plantUmlId="p_16" plantUmlBaseStyle="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;fillColor=#E2E2F0;strokeColor=#181818;fontColor=#000000;fontSize=14;html=1;part=1;" plantUmlBaseValue="Khách nhận hàng" id="nG7lfMtl_-IqsgEl2b1K-93">
+          <mxCell parent="nG7lfMtl_-IqsgEl2b1K-92" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;fillColor=#E2E2F0;strokeColor=#181818;fontColor=#000000;fontSize=14;html=1;part=1;" vertex="1">
+            <mxGeometry height="38" width="24" x="47.20945000000001" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Khách nhận hàng" plantUmlId="pf_17" plantUmlBaseStyle="shape=umlActor;verticalLabelPosition=top;verticalAlign=bottom;fillColor=#E2E2F0;strokeColor=#181818;fontColor=#000000;fontSize=14;html=1;part=1;" plantUmlBaseValue="Khách nhận hàng" id="nG7lfMtl_-IqsgEl2b1K-94">
+          <mxCell parent="nG7lfMtl_-IqsgEl2b1K-92" style="shape=umlActor;verticalLabelPosition=top;verticalAlign=bottom;fillColor=#E2E2F0;strokeColor=#181818;fontColor=#000000;fontSize=14;html=1;part=1;" vertex="1">
+            <mxGeometry height="38" width="24" x="47.20945000000001" y="338.8" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="LockerTerminal" plantUmlId="p_3" plantUmlBaseStyle="shape=umlLifeline;perimeter=lifelinePerimeter;size=33;lifelineMirror=1;dashPattern=5 5;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;rounded=1;absoluteArcSize=1;arcSize=5;fillColor=#E2E2F0;strokeColor=#181818;strokeWidth=0.5;fontColor=#000000;fontSize=14;whiteSpace=wrap;html=1;" plantUmlBaseValue="LockerTerminal" id="nG7lfMtl_-IqsgEl2b1K-95">
+          <mxCell parent="nG7lfMtl_-IqsgEl2b1K-91" style="shape=umlLifeline;perimeter=lifelinePerimeter;size=33;lifelineMirror=1;dashPattern=5 5;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;rounded=1;absoluteArcSize=1;arcSize=5;fillColor=#E2E2F0;strokeColor=#181818;strokeWidth=0.5;fontColor=#000000;fontSize=14;whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="328.8" width="118.91099999999999" x="321.3699000000001" y="284" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="PackageService" plantUmlId="p_4" plantUmlBaseStyle="shape=umlLifeline;perimeter=lifelinePerimeter;size=33;lifelineMirror=1;dashPattern=5 5;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;rounded=1;absoluteArcSize=1;arcSize=5;fillColor=#E2E2F0;strokeColor=#181818;strokeWidth=0.5;fontColor=#000000;fontSize=14;whiteSpace=wrap;html=1;" plantUmlBaseValue="PackageService" id="nG7lfMtl_-IqsgEl2b1K-96">
+          <mxCell parent="nG7lfMtl_-IqsgEl2b1K-91" style="shape=umlLifeline;perimeter=lifelinePerimeter;size=33;lifelineMirror=1;dashPattern=5 5;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;rounded=1;absoluteArcSize=1;arcSize=5;fillColor=#E2E2F0;strokeColor=#181818;strokeWidth=0.5;fontColor=#000000;fontSize=14;whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="328.8" width="116.4159" x="492.1959571428572" y="284" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="grpframe_5" plantUmlBaseStyle="rounded=0;fillColor=none;strokeColor=#000000;strokeWidth=1.5;" plantUmlBaseValue="" id="nG7lfMtl_-IqsgEl2b1K-97">
+          <mxCell parent="nG7lfMtl_-IqsgEl2b1K-91" style="rounded=0;fillColor=none;strokeColor=#000000;strokeWidth=1.5;" vertex="1">
+            <mxGeometry height="164.8" width="568.6118571428572" x="50" y="399" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="alt" plantUmlId="grptab_6" plantUmlBaseStyle="rounded=0;fillColor=#EEEEEE;strokeColor=#000000;strokeWidth=1.5;fontColor=#000000;fontSize=13;fontStyle=1;align=left;spacingLeft=10;verticalAlign=middle;html=1;" plantUmlBaseValue="alt" id="nG7lfMtl_-IqsgEl2b1K-98">
+          <mxCell parent="nG7lfMtl_-IqsgEl2b1K-91" style="rounded=0;fillColor=#EEEEEE;strokeColor=#000000;strokeWidth=1.5;fontColor=#000000;fontSize=13;fontStyle=1;align=left;spacingLeft=10;verticalAlign=middle;html=1;" vertex="1">
+            <mxGeometry height="19.7" width="62.138642857142855" x="50" y="399" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="[[OTP đúng]]" plantUmlId="grpcond_7" plantUmlBaseStyle="text;html=1;fontColor=#000000;fontSize=11;fontStyle=1;align=left;verticalAlign=middle;" plantUmlBaseValue="[[OTP đúng]]" id="nG7lfMtl_-IqsgEl2b1K-99">
+          <mxCell parent="nG7lfMtl_-IqsgEl2b1K-91" style="text;html=1;fontColor=#000000;fontSize=11;fontStyle=1;align=left;verticalAlign=middle;" vertex="1">
+            <mxGeometry height="15" width="79.00382142857144" x="122.13864285714286" y="402" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="grpelse_8" plantUmlBaseStyle="endArrow=none;html=1;strokeColor=#000000;strokeWidth=1;dashed=1;dashPattern=2 2;exitX=0;exitY=0.513;exitDx=0;exitDy=0;curved=0;rounded=0;endSize=6;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="" id="nG7lfMtl_-IqsgEl2b1K-100">
+          <mxCell edge="1" parent="nG7lfMtl_-IqsgEl2b1K-91" source="nG7lfMtl_-IqsgEl2b1K-97" style="endArrow=none;html=1;strokeColor=#000000;strokeWidth=1;dashed=1;dashPattern=2 2;exitX=0;exitY=0.513;exitDx=0;exitDy=0;curved=0;rounded=0;endSize=6;fontSize=11;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="50" y="483.5" as="sourcePoint" />
+              <mxPoint x="618.6118571428572" y="483.5" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="[[OTP sai]]" plantUmlId="grpelselbl_9" plantUmlBaseStyle="text;html=1;fontColor=#000000;fontSize=11;fontStyle=1;align=left;verticalAlign=middle;" plantUmlBaseValue="[[OTP sai]]" id="nG7lfMtl_-IqsgEl2b1K-101">
+          <mxCell parent="nG7lfMtl_-IqsgEl2b1K-91" style="text;html=1;fontColor=#000000;fontSize=11;fontStyle=1;align=left;verticalAlign=middle;" vertex="1">
+            <mxGeometry height="15" width="67.587" x="55" y="485.5" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Nhập mã OTP" plantUmlId="msg_10" plantUmlBaseStyle="endArrow=classic;endFill=1;endSize=9;html=1;rounded=0;edgeStyle=none;curved=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;align=center;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="Nhập mã OTP" id="nG7lfMtl_-IqsgEl2b1K-102">
+          <mxCell edge="1" parent="nG7lfMtl_-IqsgEl2b1K-91" source="nG7lfMtl_-IqsgEl2b1K-92" style="endArrow=classic;endFill=1;endSize=9;html=1;rounded=0;edgeStyle=none;curved=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;align=center;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="nG7lfMtl_-IqsgEl2b1K-108">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="245" y="352" />
+              </Array>
+              <mxPoint x="113.20945" y="352" as="sourcePoint" />
+              <mxPoint x="375.82540000000006" y="352" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="verify_otp()" plantUmlId="msg_11" plantUmlBaseStyle="endArrow=classic;endFill=1;endSize=9;html=1;rounded=0;edgeStyle=none;curved=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;align=center;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="verify_otp()" id="nG7lfMtl_-IqsgEl2b1K-103">
+          <mxCell edge="1" parent="nG7lfMtl_-IqsgEl2b1K-91" source="nG7lfMtl_-IqsgEl2b1K-108" style="endArrow=classic;endFill=1;endSize=9;html=1;rounded=0;edgeStyle=none;curved=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;align=center;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="nG7lfMtl_-IqsgEl2b1K-109">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="466" y="384" />
+              </Array>
+              <mxPoint x="385.82540000000006" y="384" as="sourcePoint" />
+              <mxPoint x="545.4039071428572" y="384" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Kết quả hợp lệ" plantUmlId="msg_12" plantUmlBaseStyle="endArrow=classic;endFill=1;endSize=9;html=1;rounded=0;edgeStyle=none;curved=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;dashed=1;dashPattern=2 2;align=center;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="Kết quả hợp lệ" id="nG7lfMtl_-IqsgEl2b1K-104">
+          <mxCell edge="1" parent="nG7lfMtl_-IqsgEl2b1K-91" source="nG7lfMtl_-IqsgEl2b1K-109" style="endArrow=classic;endFill=1;endSize=9;html=1;rounded=0;edgeStyle=none;curved=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;dashed=1;dashPattern=2 2;align=center;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="nG7lfMtl_-IqsgEl2b1K-108">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="466" y="442.5" />
+              </Array>
+              <mxPoint x="545.4039071428572" y="442.5" as="sourcePoint" />
+              <mxPoint x="385.82540000000006" y="442.5" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="&quot;Mở tủ thành công&quot;" plantUmlId="msg_13" plantUmlBaseStyle="endArrow=classic;endFill=1;endSize=9;html=1;rounded=0;edgeStyle=none;curved=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;dashed=1;dashPattern=2 2;align=center;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="&quot;Mở tủ thành công&quot;" id="nG7lfMtl_-IqsgEl2b1K-105">
+          <mxCell edge="1" parent="nG7lfMtl_-IqsgEl2b1K-91" source="nG7lfMtl_-IqsgEl2b1K-108" style="endArrow=classic;endFill=1;endSize=9;html=1;rounded=0;edgeStyle=none;curved=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;dashed=1;dashPattern=2 2;align=center;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="nG7lfMtl_-IqsgEl2b1K-92">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="245" y="474.5" />
+              </Array>
+              <mxPoint x="375.82540000000006" y="474.5" as="sourcePoint" />
+              <mxPoint x="113.20945" y="474.5" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Kết quả không hợp lệ" plantUmlId="msg_14" plantUmlBaseStyle="endArrow=classic;endFill=1;endSize=9;html=1;rounded=0;edgeStyle=none;curved=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;dashed=1;dashPattern=2 2;align=center;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="Kết quả không hợp lệ" id="nG7lfMtl_-IqsgEl2b1K-106">
+          <mxCell edge="1" parent="nG7lfMtl_-IqsgEl2b1K-91" source="nG7lfMtl_-IqsgEl2b1K-109" style="endArrow=classic;endFill=1;endSize=9;html=1;rounded=0;edgeStyle=none;curved=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;dashed=1;dashPattern=2 2;align=center;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="nG7lfMtl_-IqsgEl2b1K-108">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="466" y="523.8" />
+              </Array>
+              <mxPoint x="545.4039071428572" y="523.8" as="sourcePoint" />
+              <mxPoint x="385.82540000000006" y="523.8" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="&quot;Mã OTP không đúng, vui lòng thử lại&quot;" plantUmlId="msg_15" plantUmlBaseStyle="endArrow=classic;endFill=1;endSize=9;html=1;rounded=0;edgeStyle=none;curved=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;dashed=1;dashPattern=2 2;align=center;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" plantUmlBaseValue="&quot;Mã OTP không đúng, vui lòng thử lại&quot;" id="nG7lfMtl_-IqsgEl2b1K-107">
+          <mxCell edge="1" parent="nG7lfMtl_-IqsgEl2b1K-91" source="nG7lfMtl_-IqsgEl2b1K-108" style="endArrow=classic;endFill=1;endSize=9;html=1;rounded=0;edgeStyle=none;curved=0;strokeColor=#181818;strokeWidth=1;fontColor=#000000;fontSize=13;verticalAlign=bottom;labelBackgroundColor=none;dashed=1;dashPattern=2 2;align=center;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" target="nG7lfMtl_-IqsgEl2b1K-92">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="245" y="555.8" />
+              </Array>
+              <mxPoint x="375.82540000000006" y="555.8" as="sourcePoint" />
+              <mxPoint x="113.20945" y="555.8" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="act_0" plantUmlBaseStyle="rounded=0;fillColor=#FFFFFF;strokeColor=#181818;strokeWidth=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;portConstraint=eastwest;" plantUmlBaseValue="" id="nG7lfMtl_-IqsgEl2b1K-108">
+          <mxCell parent="nG7lfMtl_-IqsgEl2b1K-91" style="rounded=0;fillColor=#FFFFFF;strokeColor=#181818;strokeWidth=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;portConstraint=eastwest;" vertex="1">
+            <mxGeometry height="210.8" width="10" x="375.82540000000006" y="352" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="act_1" plantUmlBaseStyle="rounded=0;fillColor=#FFFFFF;strokeColor=#181818;strokeWidth=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;portConstraint=eastwest;" plantUmlBaseValue="" id="nG7lfMtl_-IqsgEl2b1K-109">
+          <mxCell parent="nG7lfMtl_-IqsgEl2b1K-91" style="rounded=0;fillColor=#FFFFFF;strokeColor=#181818;strokeWidth=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;portConstraint=eastwest;" vertex="1">
+            <mxGeometry height="139.8" width="10" x="545.4039071428572" y="384" as="geometry" />
+          </mxCell>
+        </UserObject>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
